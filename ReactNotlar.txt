@@ -1,0 +1,36 @@
+REACT
+-Bir react projesi 2 şekilde oluşturulabilir.
+**1. yöntem
+npx create-react-app proje-adi
+cd proje-adi
+npm start
+**2. yöntem
+npm create vite@latest
+cd proje-adi
+npm install
+npm run dev
+-----Vite esm (js modül sistemi) tabanlıdır, yalnızca gerekli modülleri yüklendiğinde işler. Daha hızlı ve esnektir.
+Create-react-app ise webpack tabanlıdır, geliştirme sunucusunu başlatırken tüm projeyi derler. Başlangıç süresi ve değişiklerde yenileme süreleri uzayabilir.
+Bunun gibi farklılıklar bulunmaktadır, kısacası vite daha hızlı, esnek ve performansı yüksektir.
+
+-rfce yazarak indirdiğimiz extensionslar sayesinde otomatik olarak react yapısının oluşmasını
+sağlayabiliriz.
+
+-jsx kullandığımızda direkt html'i return edebiliriz. ama düz js'de html direkt return edilemez.
+react.createElement diyerek html kullanılmalıdır.
+
+-Link kullanarak kullanıcının ileri geri gitmesini sağlayabiliriz. Ayrıca link tarayıcıyı tamamen yenilemeden ilgili sayfayı render eder.
+
+-Redux ile componentler arasında sırasıyla iletişim kurmak yerine props geçmek yerine bütün
+componentlerden ortak olan metotlara ulaşılmasını sağlar. Redux toolkit ise ise redux kadar
+karmaşık değildir ve projeye kolay entegre edilebilir.
+-router için link verebilmek için "Link"i import ettik.
+-iç içe (nested) router oluşturmak için "outlet react router dom" kullanılır. /products/sugar gibi
+-usenavigate hooks'u = tıkladığında bu url'e git
+-useParams hooks'u url adresinden gelen id'ye ulaşabilmek ve kullanabilmek
+-formik ve yup kullanarak ui tarafındaki validasyonları yapabiliriz. Formik ile form oluşturulur,
+yup ile validasyon yapılır.
+-material ui componenti kullanılırken style yerine sx kullanmak daha iyi olur, style bazen işe 
+yaramaz. style ile aynı şekilde kullanılır.
+-firebase google tarafından yapılan backend ve db iletişimini kendisi halleden yapıdır. Backend kod 
+yazmaya ihtiyaç kalmamaktadır.
